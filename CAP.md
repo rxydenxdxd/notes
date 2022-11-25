@@ -15,3 +15,13 @@
   - When a network failure happens, one has to decide between:
     - Cancel the operation and thus decrease the availability but ensure consistency.
     - Proceed with the operation and provide availability but risk consistency.
+
+## Multi-Master Replication
+
+- It is a method of database replication which allows data to be stored by a group of computers, and updated by any member of the group.
+- The Multi-Master replication system is responsible for propagating the data modifications made by each member to the rest of the group, and resolving any conflicts that might arise between concurrent changed made by different members.
+
+## Master Replication
+
+- It is a method of database replication in which a single member of the group is designated as the "Master" for a given piece of data and is the only node allowed to modify that data.
+- Other members wishing to modify the data must first contact the Master in order to change the data, which allows consistency among the group, but is less flexible than Multi-Master Replication.
