@@ -30,3 +30,20 @@
 - **Open-Source**: NoSQL is an open-source database. This means that there is no reliable standard for this database, which means that two database are likely to be unequal.
 - **GUI is not available**: A reliable GUI for this database is not flexibly available in the market.
 - **Large Document Size**: Some database like MongoDB use key-value pairs in JSON (Javascript Object Notation) format.
+
+## Types of NoSQL Databases
+
+- **Key-Value**
+  - In this type of database, The data is stored in key-value pairs.
+  - For instance, key-value pair may contain a key like "Name" and value like "John".
+  - Key-Value works well for storing data like Shopping Cart contents.
+- **Column-Oriented**
+  - In this type of database, The data primarily work on columns and every column is treated individually.
+  - High performance on aggregation queries (for eg. COUNT, SUM, AVG, MAX, MIN)
+- **Graph**
+  - In this type of database, The data is stored in the form of Graphs.
+  - A graph contains nodes and edges, Where the nodes represents Entities and edges represent connections or relationships.
+- **Document-Based**
+  - In this type of database, the data is stored in collection of documents.
+  - Documents are not forced to have a schema, and therefore is flexible and easy to change/scale.
+  - Documents can contain many different key-value pairs, key-array pairs, and even nested documents.
