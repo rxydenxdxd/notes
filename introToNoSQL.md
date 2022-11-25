@@ -10,11 +10,20 @@
 
 ## Difference between Relational and Non-Relational Databases (Document-based Model)
 
-| Relational                                  | Non-Relational                                                |
-| ------------------------------------------- | ------------------------------------------------------------- |
-| Structured                                  | UnStructured                                                  |
-| Uses Tables, Rows and Columns to store data | Uses Collections, Documents and Key-Value pairs to store data |
-| Uses Tables, Rows and Columns to store data | Uses Collections, Documents and Key-Value pairs to store data |
+| Relational                                                  | Non-Relational                                                |
+| ----------------------------------------------------------- | ------------------------------------------------------------- |
+| Structured                                                  | Unstructured                                                  |
+| Data is stored in tables, rows and columns                  | Data is stored in collections, documents and key-value pairs. |
+| Examples of Relational Database: SQL, Oracle Database, etc. | Examples of Non-Relational Database: MongoDB, GraphQL, etc.   |
+
+## Difference between SQL and NoSQL
+
+| SQL                                   | NoSQL                           |
+| ------------------------------------- | ------------------------------- |
+| Relational Database Management System | Distributed Database Management |
+| Vertically Scalable                   | Horizontally Scalable           |
+| Fixed or Static Schema                | Dynamic/Flexible or No Schema   |
+| MySQL, MS-SQL Server, etc.            | MongoDB, GraphQL                |
 
 ## Merits of NoSQL
 

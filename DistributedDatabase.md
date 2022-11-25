@@ -92,7 +92,14 @@
 
 ## Data at Rest
 
+- Data at rest in IT refers to the inactive data that is stored physically in any digital form. (For instance, databases, data warehouses, spreadsheets, etc.).
+- Data at rest is subject to threats from hackers and other malicious activities. In order to prevent this, organizations employ various security measures like password protection, encryption, or combination of both.
+- The security options used for this type of data are commonly referred to as Data At Rest Protection (DARP).
+
 ## Data at Motion
+
+- Data in motion refers to a stream of data moving through any kind of network.
+- It is considered the opposite of Data at rest, because it represents the data which is not moving or is at rest while Data in motion refers to data which is constantly flowing through a network.
 
 ## Partitioning
 
@@ -119,3 +126,7 @@ Sharding and Partitioning both refers to dividing a database into smaller subset
 | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | In sharding, the fragmentation of data is done in a horizontal manner                         | In partitioning, the fragmentation of data is done in a vertical manner           |
 | In sharding, the data is divided into horizontal shards and is spread over multiple computers | Partitioning is about grouping subsets of data within a single database instance. |
+
+## Clustering
+
+- Database Clustering is the process of combining more than one servers or instances connecting a single database. Sometimes one server may not be adequate to manage the amount of data or the number of requests, that is when a Data Cluster is needed.
