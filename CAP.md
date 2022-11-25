@@ -1,7 +1,7 @@
 ## ACID
 
 - A transaction is a collection of instructions. To maintain the integrity of a database, all transactions must obey ACID properties.
-  - **Atomicity**: A transaction is an atomic unit. Therefore, all the instructions within a transaction must successfully execute, or none of them should execute. If any of the transactions fail, the entire transaction should abort and rollback
+  - **Atomicity**: A transaction is an atomic unit. Therefore, all the instructions within a transaction must successfully execute, or none of them should execute. If any of the instruction fail, the entire transaction should abort and rollback
   - **Consistency**: A database is initially in a consistent state, and it should remain in a consistent state. If any one of the sub-transaction fails and the transaction is not rolled back, the database becomes inconsistent.
   - **Isolation**: If multiple transactions are running concurrently, They should not be effected by each other. The result should be the same as the result obtained if the transactions were running sequentially.
   - **Durability**: Changes that been committed to the database should remain even in the case of software and hardware failure. For instance, if an account has a balance of Rs. 10,000, it should not be affected by hardware/software failure.
