@@ -11,7 +11,7 @@
 - CAP Theorem states that a distributed database system can only guarantee two of these characteristics: **Consistency**, **Availability**, and **Partition Tolerance**.
   - **Consistency**: A system is said to be consistent when all the nodes of that database return same value. That is, if a 'Read' operation is performed simultaneously on multiple nodes connected to a consistent database, all the systems should return the most recent write operation.
   - **Availability**: Availability in a distributed database system ensures that it remains operational 100% of the time. That is, every request from the nodes must return a non-error response. ( It does not necessarily mean that the data will be consistent. )
-  - **Partition Tolerance**: Partition Tolerance ensures that the system does not fail, regardless of the arbitrary number of messages are dropped or delayed between nodes in a system.
+  - **Partition Tolerance**: Partition Tolerance ensures that the system does not fail, regardless of the arbitrary number of messages that are dropped or delayed between nodes in a system.
   - When a network failure happens, one has to decide between:
     - Cancel the operation and thus decrease the availability but ensure consistency.
     - Proceed with the operation and provide availability but risk consistency.
