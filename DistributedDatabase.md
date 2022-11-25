@@ -71,7 +71,51 @@
 
 ## Strategies and Objectives of DDBMS
 
-- Data Fragmentation
-- Data Allocation
-- Data Replication
-- Location Transparency
+- **Data Fragmentation**:
+  - It is an approach of distribution of database in which the data is partitioned and spread over multiple sites/locations.
+  - **There are three types of Data Fragmentation strategies**:
+    - **Horizontal**: Refers to the division of a relation fragments of tuples.
+    - **Vertical**: Refers to the division of data into attribute subsets (columns).
+    - **Mixed**: Refers to a combination of horizontal and vertical fragmentation.
+- **Data Allocation**:
+  - Data Allocation is an intelligent distribution of data partitions, to improve database performance and Data availability for end-users.
+  - **Factors to be considered during Data Allocation**:
+    - Performance and Data Availability Goals.
+    - Size
+    - Types of transactions
+- **Data Replication**: It is an approach of distribution of database in which the data is copied over different sites/locations.
+  - **There are three scenarios of Data Replication**:
+    - **Fully Replicated Database**: Multiple copies of each database fragment at multiple sites. In this case, all database fragments are replicated.
+    - **Partially Replicated Database**: In this, multiple copies of some fragments are replicated.
+    - **Unreplicated **: In this, each database fragment is stored at a single site/location. That is, there is no duplication of database fragments.
+- **Location Transparency**: Enables a user to access data without knowing, or being concerned with, the site at which the data resides. The location of the data is hidden.
+
+## Data at Rest
+
+## Data at Motion
+
+## Partitioning
+
+- Partitioning is a database process where very large tables are divided into multiple smaller parts. By splitting a large table into smaller tables, the queries which are run on these tables can run faster as there is less data to scan.
+
+### Vertical Partitioning
+
+- Vertical Partitioning refers to splitting very large columns into their own tables.
+- This is very useful for increasing the performance of SQL servers as the queries which are executed on the columns could be contain high amounts of data or BLOB columns.
+- Another example is to restrict the access of the query from sensitive data like passwords, account number, etc.
+
+## Sharding
+
+- A Database Shard is a horizontal partition of data in a database or a search engine.
+- In horizontal partitioning, the database is horizontally splitted into two or more shards in order to spread load.
+- Splitting a customer database according to their continents is an excellent example of horizontal sharding.
+- The governing concept behind sharding is based on the idea that as the size of a database and the number of transactions per unit of time made on the database increase linearly, the response time for querying the database increases exponentially.
+
+## What is the difference between Sharding and Partitioning
+
+Sharding and Partitioning both refers to dividing a database into smaller subsets. However there are some key differences between these two terms
+
+| Sharding                                                                                      | Partitioning                                                                      |
+| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| In sharding, the fragmentation of data is done in a horizontal manner                         | In partitioning, the fragmentation of data is done in a vertical manner           |
+| In sharding, the data is divided into horizontal shards and is spread over multiple computers | Partitioning is about grouping subsets of data within a single database instance. |
