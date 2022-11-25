@@ -10,8 +10,23 @@
 
 ## Difference between Relational and Non-Relational Databases (Document-based Model)
 
-| Relational | Non-Relational  |
-| ---------- | --------------- |
-| Tables     | Collections     |
-| Rows       | Documents       |
-| Columns    | Key-value pairs |
+| Relational                                  | Non-Relational                                                |
+| ------------------------------------------- | ------------------------------------------------------------- |
+| Structured                                  | UnStructured                                                  |
+| Uses Tables, Rows and Columns to store data | Uses Collections, Documents and Key-Value pairs to store data |
+| Uses Tables, Rows and Columns to store data | Uses Collections, Documents and Key-Value pairs to store data |
+
+## Merits of NoSQL
+
+- **High Scalability**:
+  - NoSQL database uses sharding for horizontal scaling.
+  - NoSQL stores data horizontally against relational databases which stores data vertically.
+  - Vertical scaling means adding more resources to the existing machine to store the data whereas Horizontal Scaling means adding more machines to store more data.
+  - NoSQL databases can handle huge amount of data because of scalability. As the data increases, NoSQL databases can scale itself to handle that data in an efficient manner.
+    > **Sharding**: Partitioning of data on multiple machines in such a way that the order of the data is preserved is known as **Sharding**
+
+## Demerits of NoSQL
+
+- **Open-Source**: NoSQL is an open-source database. This means that there is no reliable standard for this database, which means that two database are likely to be unequal.
+- **GUI is not available**: A reliable GUI for this database is not flexibly available in the market.
+- **Large Document Size**: Some database like MongoDB use key-value pairs in JSON (Javascript Object Notation) format.
